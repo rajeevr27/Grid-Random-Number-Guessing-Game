@@ -2,4 +2,4 @@
 
 ## Project Overview
 
-## Screen Shots
+## Screenshots

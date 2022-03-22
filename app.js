@@ -15,7 +15,7 @@ function disableGridItems() {
  }
 
 for (let i = 0; i < gridItem.length; i += 1) {
-  gridItem[i].addEventListener("click", function () {
+  gridItem[i].addEventListener("click", function() {
       if (i == randomNumber) {
       div = this;
       indicatorMessage.textContent = `You Guessed Right! The Random Number is ${randomNumber+1}.`;
@@ -45,5 +45,5 @@ for (let i = 0; i < gridItem.length; i += 1) {
       div.style.color = "white";
       guessCounter += 1;
     }
- });//End of gridItem functiob
+ });//End of gridItem function
 }//End of for loop

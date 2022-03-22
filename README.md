@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A Grid version of Random Number Guessing Game. The user is prompted to select a number between 1 and 25. The program then proceeds to determine if the number entered is the random number, higher than the random number, lower than the random number, or has reached the maximum number of guesses allowed.
+A Grid version of Random Number Guessing Game. The user is prompted to select a number between 1 and 25. The program then proceeds to determine if the number selected is the random number, higher than the random number, lower than the random number, or has reached the maximum number of guesses allowed.
 ## Screenshots
 
 <img src="screen-shots/start-screen.png">

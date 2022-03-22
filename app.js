@@ -2,7 +2,7 @@ const randomNumber = Math.floor(Math.random() * 25);//Generates random integer b
 const indicatorMessage = document.querySelector('h2');
 const gridItem = document.getElementsByClassName("grid-item");
 let guessCounter = 0;
-let div = this;
+let div;
 
 function disableGridItems() {
     for (let i = 0; i < gridItem.length; i += 1) {

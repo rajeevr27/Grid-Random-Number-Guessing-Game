@@ -4,6 +4,11 @@ body {
   line-height: 1.5;
 }
 
+#container {
+  border: 5px solid dodgerblue;
+  padding: 5px;
+}
+
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;

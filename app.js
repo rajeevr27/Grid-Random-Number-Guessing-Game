@@ -2,7 +2,7 @@ const randomNumber = Math.floor(Math.random() * 25);//Generates random integer b
 const indicatorMessage = document.querySelector('h2');
 const gridItem = document.getElementsByClassName("grid-item");
 const previousGuesses = [];
-let guessCount = 0;
+let guessCount;
 let div;
 
 function disableGridItems() {
@@ -40,7 +40,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         div.style.backgroundColor = "red";
         div.style.color = "white";
         previousGuesses.push(i);
-        guessCount += 1;
+        guessCount = previousGuesses.length;
     } else if (i < randomNumber) {
         div = this;
         indicatorMessage.textContent = `Guess > Higher`;
@@ -48,7 +48,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         div.style.backgroundColor = "red";
         div.style.color = "white";
         previousGuesses.push(i);
-        guessCount += 1;
+        guessCount = previousGuesses.length;
     }
  });//End of gridItem function
 }//End of for loop

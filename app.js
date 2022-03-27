@@ -6,14 +6,14 @@ let guessCount = 0;
 let div;
 
 function disableGridItems() {
-    for (let i = 0; i < gridItem.length; i += 1) {
+  for (let i = 0; i < gridItem.length; i += 1) {
     gridItem[i].style.pointerEvents = "none"
   }
- }
+}
 
- const restartGame = function() {
-   location.reload();
- }
+const restartGame = function() {
+  location.reload();
+}
 
 for (let i = 0; i < gridItem.length; i += 1) {
   gridItem[i].addEventListener("click", function() {

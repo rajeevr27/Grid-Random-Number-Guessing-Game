@@ -17,7 +17,7 @@ const restartGame = function() {
 
 for (let i = 0; i < gridItem.length; i += 1) {
   gridItem[i].addEventListener("click", function() {
-      if (i == randomNumber) {
+      if (i === randomNumber) {
         div = this;
         indicatorMessage.textContent = `You Guessed Right! The Random Number is ${randomNumber+1}.`;
         indicatorMessage.style.color = "green";

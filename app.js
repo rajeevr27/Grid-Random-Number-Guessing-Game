@@ -1,6 +1,7 @@
 const randomNumber = Math.floor(Math.random() * 25);//Generates random integer between 0 and 24
 const indicatorMessage = document.querySelector('h2');
 const gridItem = document.getElementsByClassName("grid-item");
+const previousGuesses = [];
 let guessCount = 0;
 let div;
 
@@ -23,6 +24,8 @@ for (let i = 0; i < gridItem.length; i += 1) {
       div.style.backgroundColor = "green";
       div.style.color = "white";
       disableGridItems();
+    } else if (previousGuesses.indexOf(i) > -1) {
+      gridItem[i].style.pointerEvents = "none"
     } else if (guessCount === 9) {
       div = this;
       indicatorMessage.textContent = `You have reached the maximum number of guesses allowed.`;
@@ -36,6 +39,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
       indicatorMessage.style.color = "black";
       div.style.backgroundColor = "red";
       div.style.color = "white";
+      previousGuesses.push(i);
       guessCount += 1;
     } else if (i < randomNumber) {
       div = this;
@@ -43,6 +47,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
       indicatorMessage.style.color = "black";
       div.style.backgroundColor = "red";
       div.style.color = "white";
+      previousGuesses.push(i);
       guessCount += 1;
     }
  });//End of gridItem function

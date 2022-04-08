@@ -34,6 +34,10 @@ h1, h2 {
   cursor: pointer;
 }
 
+.grid-item:hover {
+  background-color: gainsboro;
+}
+
 .button-container {
   text-align: center;
   background-color: dodgerblue;

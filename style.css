@@ -51,3 +51,7 @@ button {
   background-color: lightgrey;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: gainsboro;
+}

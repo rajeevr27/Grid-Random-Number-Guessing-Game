@@ -18,6 +18,17 @@ h1, h2 {
   text-align: center;
 }
 
+h3 {
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+#message-container {
+  background-color: dodgerblue;
+  margin-bottom: 5px;
+  height: 49px;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -34,7 +45,7 @@ h1, h2 {
   cursor: pointer;
 }
 
-.grid-item:hover {
+.grid-item:hover, button:hover  {
   background-color: gainsboro;
 }
 
@@ -52,6 +63,21 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: gainsboro;
+#background-style-green {
+  background-color: green;
+  color: white;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+#background-style-red {
+  background-color: red;
+  color: white;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.element {
+  display: inline-block;
+  padding: 5px;
 }

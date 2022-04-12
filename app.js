@@ -11,9 +11,9 @@ function guessListHistory() {
     for (let i = 0; i < previousGuesses.length; i += 1) {//Start of for loop
       const currentGuess = previousGuesses[i];
       if (currentGuess == randomNumber) {
-        guessHistory.innerHTML += `<li class='element' id='background-style-green'>${previousGuesses[i] + 1}</li>`;
+        guessHistory.innerHTML += `<li class='list-item' id='list-item-green'>${previousGuesses[i] + 1}</li>`;
       } else {
-        guessHistory.innerHTML += `<li class='element' id='background-style-red'>${previousGuesses[i] + 1}</li>`;
+        guessHistory.innerHTML += `<li class='list-item' id='list-item-red'>${previousGuesses[i] + 1}</li>`;
       }
    guessHistory.innerHTML += `</ul>`;
   }//End of for loop

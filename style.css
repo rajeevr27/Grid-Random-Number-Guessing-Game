@@ -63,21 +63,21 @@ button {
   cursor: pointer;
 }
 
-#background-style-green {
+#list-item-green {
   background-color: green;
   color: white;
   margin-top: 6px;
   margin-left: 5px;
 }
 
-#background-style-red {
+#list-item-red {
   background-color: red;
   color: white;
   margin-top: 6px;
   margin-left: 5px;
 }
 
-.element {
+.list-item {
   display: inline-block;
   padding: 5px;
 }

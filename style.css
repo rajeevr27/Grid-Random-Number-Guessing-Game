@@ -65,6 +65,7 @@ button {
 
 #list-item-green {
   background-color: green;
+  border: 1px solid black;
   color: white;
   margin-top: 6px;
   margin-left: 5px;
@@ -72,6 +73,7 @@ button {
 
 #list-item-red {
   background-color: red;
+  border: 1px solid black;
   color: white;
   margin-top: 6px;
   margin-left: 5px;
@@ -79,5 +81,5 @@ button {
 
 .list-item {
   display: inline-block;
-  padding: 5px;
+  padding: 4px;
 }

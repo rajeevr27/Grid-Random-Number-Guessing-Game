@@ -18,15 +18,15 @@ h1, h2 {
   text-align: center;
 }
 
-h3 {
-  margin: 0 auto;
-  max-width: 362px;
-}
-
 #message-container {
   background-color: dodgerblue;
   margin-bottom: 5px;
   height: 49px;
+}
+
+h3 {
+  margin: 0 auto;
+  max-width: 362px;
 }
 
 .list-item {

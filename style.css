@@ -29,6 +29,27 @@ h3 {
   height: 49px;
 }
 
+.list-item {
+  display: inline-block;
+  padding: 4px;
+}
+
+#list-item-green {
+  background-color: green;
+  border: 1px solid black;
+  color: white;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+#list-item-red {
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -61,25 +82,4 @@ button {
   padding: 15px;
   background-color: lightgrey;
   cursor: pointer;
-}
-
-#list-item-green {
-  background-color: green;
-  border: 1px solid black;
-  color: white;
-  margin-top: 6px;
-  margin-left: 5px;
-}
-
-#list-item-red {
-  background-color: red;
-  border: 1px solid black;
-  color: white;
-  margin-top: 6px;
-  margin-left: 5px;
-}
-
-.list-item {
-  display: inline-block;
-  padding: 4px;
 }

@@ -18,7 +18,7 @@ h1, h2 {
   text-align: center;
 }
 
-#message-container {
+#guess-history-container {
   background-color: dodgerblue;
   margin-bottom: 5px;
   height: 49px;

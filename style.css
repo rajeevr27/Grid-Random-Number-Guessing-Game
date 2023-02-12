@@ -58,6 +58,8 @@ h3 {
   background-color: dodgerblue;
   padding: 10px;
   grid-gap: 10px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .grid-item {

@@ -36,26 +36,20 @@ h3 {
 .list-item {
   display: inline-block;
   padding: 4px;
-}
-
-#list-item-green {
-  background-color: green;
   border: 1px solid black;
   color: white;
   margin-top: 6px;
   margin-left: 5px;
   min-width: 20.813px;
   text-align: center;
+}
+
+#list-item-green {
+  background-color: green;  
 }
 
 #list-item-red {
   background-color: red;
-  border: 1px solid black;
-  color: white;
-  margin-top: 6px;
-  margin-left: 5px;
-  min-width: 20.813px;
-  text-align: center;
 }
 
 #grid-container {

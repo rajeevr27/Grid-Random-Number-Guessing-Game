@@ -24,6 +24,10 @@ h1, h2 {
   height: 49px;
 }
 
+#guess-history-container ul {
+  margin: 0px;
+}
+
 h3 {
   margin: 0 auto;
   max-width: 362px;
@@ -40,6 +44,8 @@ h3 {
   color: white;
   margin-top: 6px;
   margin-left: 5px;
+  min-width: 20.813px;
+  text-align: center;
 }
 
 #list-item-red {
@@ -48,6 +54,8 @@ h3 {
   color: white;
   margin-top: 6px;
   margin-left: 5px;
+  min-width: 20.813px;
+  text-align: center;
 }
 
 #grid-container {

@@ -21,7 +21,7 @@ function guessListHistory() {
 
 function disableGridItems() {
   for (let i = 0; i < gridItem.length; i += 1) {
-    gridItem[i].style.pointerEvents = "none"
+    gridItem[i].style.pointerEvents = "none";
   }
 }
 

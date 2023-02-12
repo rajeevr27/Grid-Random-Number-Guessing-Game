@@ -22,6 +22,7 @@ h1, h2 {
   background-color: dodgerblue;
   margin-bottom: 5px;
   height: 49px;
+  padding: 2px 0;
 }
 
 #guess-history-container ul {

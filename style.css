@@ -42,6 +42,7 @@ h3 {
   margin-left: 5px;
   min-width: 20.813px;
   text-align: center;
+  cursor: default;
 }
 
 #list-item-green {

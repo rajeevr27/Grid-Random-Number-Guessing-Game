@@ -1,6 +1,6 @@
 const randomNumber = Math.floor(Math.random() * 25);//Generates random integer between 0 and 24
-const indicatorMessage = document.querySelector('h2');
-const guessHistory = document.querySelector('#guess-history-container h3');
+const indicatorMessage = document.querySelector("h2");
+const guessHistory = document.querySelector("#guess-history-container h3");
 const gridContainer = document.getElementById("grid-container");
 const gridItem = document.getElementsByClassName("grid-item");
 const previousGuesses = [];

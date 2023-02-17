@@ -1,6 +1,7 @@
 const randomNumber = Math.floor(Math.random() * 25);//Generates random integer between 0 and 24
 const indicatorMessage = document.querySelector('h2');
 const guessHistory = document.querySelector('#guess-history-container h3');
+const gridContainer = document.getElementById("grid-container");
 const gridItem = document.getElementsByClassName("grid-item");
 const previousGuesses = [];
 let guessCount;
@@ -40,6 +41,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         previousGuesses.push(i);
         guessListHistory();
         disableGridItems();
+        gridContainer.style.cursor = "not-allowed";
     } else if (previousGuesses.indexOf(i) > -1) {
         gridItem[i].style.pointerEvents = "none"
     } else if (guessCount === 9) {
@@ -51,6 +53,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         previousGuesses.push(i);
         guessListHistory();
         disableGridItems();
+        gridContainer.style.cursor = "not-allowed";
     } else if (i > randomNumber) {
         div = this;
         indicatorMessage.textContent = `Guess < Lower`;

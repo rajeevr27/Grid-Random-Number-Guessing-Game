@@ -4,6 +4,8 @@ body {
   line-height: 1.5;
 }
 
+/* Section for main container */
+
 #main-container {
   border: 5px solid dodgerblue;
   padding: 5px;
@@ -18,6 +20,8 @@ h1, h2 {
   text-align: center;
   cursor: default;
 }
+
+/* Section for guess history container */
 
 #guess-history-container {
   background-color: dodgerblue;
@@ -54,6 +58,8 @@ h3 {
   background-color: red;
 }
 
+/* Section for grid container */
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -75,6 +81,8 @@ h3 {
 .grid-item:hover, button:hover  {
   background-color: gainsboro;
 }
+
+/* Section for button container */ 
 
 #button-container {
   text-align: center;

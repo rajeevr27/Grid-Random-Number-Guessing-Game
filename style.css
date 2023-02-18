@@ -78,7 +78,7 @@ h3 {
   cursor: pointer;
 }
 
-.grid-item:hover, button:hover  {
+.grid-item:hover, #restart-button:hover  {
   background-color: gainsboro;
 }
 
@@ -90,7 +90,7 @@ h3 {
   padding: 10px;
 }
 
-button {
+#restart-button {
   margin: 5px;
   padding: 15px;
   background-color: lightgrey;

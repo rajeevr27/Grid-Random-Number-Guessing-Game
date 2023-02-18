@@ -3,6 +3,7 @@ const indicatorMessage = document.querySelector("h2");
 const guessHistory = document.querySelector("#guess-history-container h3");
 const gridContainer = document.getElementById("grid-container");
 const gridItem = document.getElementsByClassName("grid-item");
+const restartButton = document.getElementById("restart-button");
 const previousGuesses = [];
 let guessCount;
 let div;
@@ -42,6 +43,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         guessListHistory();
         disableGridItems();
         gridContainer.style.cursor = "not-allowed";
+        restartButton.style.border = "2px solid green";
     } else if (previousGuesses.indexOf(i) > -1) {
         gridItem[i].style.pointerEvents = "none"
     } else if (guessCount === 9) {
@@ -54,6 +56,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         guessListHistory();
         disableGridItems();
         gridContainer.style.cursor = "not-allowed";
+        restartButton.style.border = "2px solid green";
     } else if (i > randomNumber) {
         div = this;
         indicatorMessage.textContent = `Guess < Lower`;

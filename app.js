@@ -1,6 +1,8 @@
 const randomNumber = Math.floor(Math.random() * 25);//Generates random integer between 0 and 24
 const indicatorMessage = document.querySelector("h2");
 const guessHistory = document.querySelector("#guess-history-container h3");
+const alertMessageContainer = document.querySelector("#alert-message-container");
+const alertMessage = document.querySelector("#alert-message-container h4");
 const gridContainer = document.getElementById("grid-container");
 const gridItem = document.getElementsByClassName("grid-item");
 const restartButton = document.getElementById("restart-button");
@@ -39,19 +41,26 @@ for (let i = 0; i < gridItem.length; i += 1) {
         indicatorMessage.style.color = "green";
         div.style.backgroundColor = "green";
         div.style.color = "white";
+        alertMessageContainer.style.backgroundColor = "#03a9f4";
+        alertMessage.textContent = "";
         previousGuesses.push(i);
         guessListHistory();
         disableGridItems();
         gridContainer.style.cursor = "not-allowed";
         restartButton.style.border = "2px solid green";
     } else if (previousGuesses.indexOf(i) > -1) {
-        gridItem[i].style.pointerEvents = "none"
+        gridItem[i].style.pointerEvents = "auto"
+        alertMessageContainer.style.backgroundColor = "#ff9800";
+        alertMessage.textContent = `The number ${i+1} has already been guessed.`;
+        alertMessageContainer.style.transition = "all 0.3s";
     } else if (guessCount === 9) {
         div = this;
         indicatorMessage.textContent = `You have reached the maximum number of guesses allowed.`;
         indicatorMessage.style.color = "red";
         div.style.backgroundColor = "red";
         div.style.color = "white";
+        alertMessageContainer.style.backgroundColor = "#03a9f4";
+        alertMessage.textContent = "";
         previousGuesses.push(i);
         guessListHistory();
         disableGridItems();
@@ -63,6 +72,8 @@ for (let i = 0; i < gridItem.length; i += 1) {
         indicatorMessage.style.color = "black";
         div.style.backgroundColor = "red";
         div.style.color = "white";
+        alertMessageContainer.style.backgroundColor = "#03a9f4";
+        alertMessage.textContent = "";
         previousGuesses.push(i);
         guessCount = previousGuesses.length;
         gridItem[i].style.cursor = "default";
@@ -73,6 +84,8 @@ for (let i = 0; i < gridItem.length; i += 1) {
         indicatorMessage.style.color = "black";
         div.style.backgroundColor = "red";
         div.style.color = "white";
+        alertMessageContainer.style.backgroundColor = "#03a9f4";
+        alertMessage.textContent = "";
         previousGuesses.push(i);
         guessCount = previousGuesses.length;
         gridItem[i].style.cursor = "default";

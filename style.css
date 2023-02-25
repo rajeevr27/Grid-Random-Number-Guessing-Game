@@ -60,6 +60,20 @@ h3 {
   background-color: red;
 }
 
+/* Section for alert message container */
+
+#alert-message-container {
+  background-color: #03a9f4;
+  border-top: 2px solid white;
+  height: 49px;
+}
+
+#alert-message-container h4 {
+ text-align: center;
+ color: white;
+ margin: 13px;
+}
+
 /* Section for grid container */
 
 #grid-container {

@@ -76,7 +76,6 @@ for (let i = 0; i < gridItem.length; i += 1) {
         alertMessage.textContent = "";
         previousGuesses.push(i);
         guessCount = previousGuesses.length;
-        gridItem[i].style.cursor = "default";
         guessListHistory();
     } else if (i < randomNumber) {
         div = this;
@@ -88,7 +87,6 @@ for (let i = 0; i < gridItem.length; i += 1) {
         alertMessage.textContent = "";
         previousGuesses.push(i);
         guessCount = previousGuesses.length;
-        gridItem[i].style.cursor = "default";
         guessListHistory();
     }
  });//End of gridItem function

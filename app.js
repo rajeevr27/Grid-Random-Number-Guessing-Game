@@ -51,7 +51,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
     } else if (previousGuesses.indexOf(i) > -1) {
         gridItem[i].style.pointerEvents = "auto"
         alertMessageContainer.style.backgroundColor = "#ff9800";
-        alertMessage.textContent = `The number ${i+1} has already been guessed.`;
+        alertMessage.textContent = `Warning! The number ${i+1} has already been guessed.`;
         alertMessageContainer.style.transition = "all 0.3s";
     } else if (guessCount === 9) {
         div = this;

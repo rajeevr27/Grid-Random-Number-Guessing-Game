@@ -51,7 +51,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
         alertMessageContainer.style.backgroundColor = "#ff9800";
         alertMessage.textContent = `Warning! The number ${i+1} has already been guessed.`;
         alertMessageContainer.style.transition = "all 0.3s";
-    } else if (guessCount === 9) {
+    } else if (guessCount === 5) {
         div = this;
         indicatorMessage.textContent = `You have reached the maximum number of guesses allowed.`;
         indicatorMessage.style.color = "red";

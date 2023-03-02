@@ -28,6 +28,11 @@ function disableGridItems() {
   }
 }
 
+function closeAlertMessage() {
+  alertMessageContainer.style.backgroundColor = "#03a9f4";
+  alertMessage.innerHTML = ``;
+}
+
 const restartGame = function() {
   location.reload();
 }
@@ -49,7 +54,7 @@ for (let i = 0; i < gridItem.length; i += 1) {
     } else if (previousGuesses.indexOf(i) > -1) {
         gridItem[i].style.pointerEvents = "auto"
         alertMessageContainer.style.backgroundColor = "#ff9800";
-        alertMessage.textContent = `Warning! The number ${i+1} has already been guessed.`;
+        alertMessage.innerHTML = `<h4>Alert! The number ${i+1} has already been guessed.<span class="close-button" onclick="closeAlertMessage()">&times;</span></h4>`;
         alertMessageContainer.style.transition = "all 0.3s";
     } else if (guessCount === 5) {
         div = this;

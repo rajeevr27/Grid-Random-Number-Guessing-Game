@@ -75,6 +75,16 @@ h3 {
  cursor: default;
 }
 
+.close-button {
+  color: white;
+  float: right;
+}
+
+.close-button:hover {
+  color: black;
+  cursor: pointer;
+}
+
 /* Section for grid container */
 
 #grid-container {
